@@ -356,7 +356,13 @@ function drink(key){
  * @return {String if true else return false}
  *
  */
-
+function browseURL(website){
+  if(browsers.hasOwnProperty(website)){
+    return(browsers[website]);
+  } else {
+    return false;
+  }
+}
 
 /* Step 25
  *
@@ -367,7 +373,13 @@ function drink(key){
  * @return {String}
  *
  */
-
+function listLivingOrgClass(){
+  var orderedList = '<ul>';
+  for (var i = 0; i < livingOrganismClassification.length; i++) {
+    orderedList += ('<li>' + livingOrganismClassification[i] + '</li>' );
+  }
+  return (orderedList + '</ul>');
+}
 
 /* Step 26
  *
