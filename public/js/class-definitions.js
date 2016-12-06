@@ -261,7 +261,14 @@ var scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
  *                  "Golden"
  *
  */
-
+var beers = {
+  IPA : 'Ale',
+  Lager : 'Strong',
+  Heffeweisen : 'German',
+  Porter : 'Bitter',
+  Stout : ['Thick', 'Dark'],
+  Ale : ['light', 'Golden']
+};
 
 /* Step 20
  *
