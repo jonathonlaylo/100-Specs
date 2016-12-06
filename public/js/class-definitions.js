@@ -400,7 +400,14 @@ function listLivingOrgClass(){
  * @return {String}
  *
  */
-
+function favoritePlanet(yourFavPlanet){
+  if(planets.indexOf(yourFavPlanet) > -1){
+    var randomPlanet = planets[Math.floor(Math.random()*planets.length)];
+    return `I'm from ${yourFavPlanet}, but I wish I could go to ${randomPlanet}`;
+  } else {
+  return `${yourFavPlanet} is not a planet!`;
+  }
+}
 
 /* Step 27
  *
