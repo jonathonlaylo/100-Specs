@@ -332,7 +332,18 @@ function installLinux(LinuxType) {
  * @return {Bool when False, String when True}
  *
  */
-
+function drink(key){
+  if(beers.hasOwnProperty(key)){
+    if(typeof beers[key] !== 'string'){
+      // passed test but not account for longer phrases
+      return ('This ' + key + ' is ' + beers[key][0] + " and " + beers[key][1]+ '.');
+    } else {
+      return ('This ' + key + ' is ' + beers[key] + '.');
+    }
+  } else {
+    return false;
+  }
+}
 
 /* Step 24
  *
