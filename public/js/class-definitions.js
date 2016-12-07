@@ -503,7 +503,14 @@ function canTalkAbout(club){
  *   write
  *
  */
-
+class Pen {
+  constructor(color){
+    this.color = color;
+  }
+  write(message){
+    return `${this.color}: ${message}`;
+  }
+}
 
 /* Step 31
  *
