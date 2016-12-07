@@ -657,7 +657,19 @@ class PrincessLeia extends Person{
  *   staplePapers
  *
  */
-
+class Stapler{
+  constructor(color, maxPapers){
+    this.color = color;
+    this.maxPapers = maxPapers;
+  }
+  staplePapers(num){
+    if(num <= this.maxPapers){
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
 
 /* Step 35
  *
