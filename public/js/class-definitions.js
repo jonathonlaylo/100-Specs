@@ -1016,7 +1016,11 @@ class Shoe {
  * House class
  * @param {number} stories How many stories tall the house is
  */
-
+class House {
+  constructor(stories){
+    this.stories = stories;
+  }
+}
 
 /**
  * Step 57
