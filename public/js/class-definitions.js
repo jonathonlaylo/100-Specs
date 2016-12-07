@@ -1262,7 +1262,14 @@ House.prototype.isATallStory = function(storiesTooTall){
  * Return true if isOn is true, false otherwise.
  *
  */
-
+Lightbulb.prototype.flipSwitch = function(on){
+  if(on === 'on'){
+    this.isOn = true;
+    return true;
+  } else {
+    return false;
+  }
+};
 
  /* Step 89
  *
