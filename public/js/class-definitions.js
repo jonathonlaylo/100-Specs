@@ -960,7 +960,15 @@ class Vehicle {
  * value of the sides property to null.
  *
  */
-
+class Shape {
+  constructor(sides){
+    if(sides > 3){
+      this.sides = sides;
+    } else {
+      this.sides = null;
+    }
+  }
+}
 
 /**
  * Step 53
